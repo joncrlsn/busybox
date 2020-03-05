@@ -10,10 +10,16 @@ Build instructions for docker:
 ```
 docker build -t <your-username>/busybox:0.1.0 .
 
-# It's a good idea to have a latest tag too
+# Run the docker container to test it out
+docker run -it --rm <your-username>/busybox:0.1.0
+
+# Continue if you want it publicly available..
+# (assuming you have a hub.docker.com account and have logged in with 'docker login')
+
+# It's a good idea to have a 'latest' tag too
 docker tag <your-username>/busybox:0.1.0 <your-username>/busybox:latest
 
-# Assuming you have a dockerhub.io account and have logged in with 'docker login'
+# push it up to dockerhub.io
 docker push <your-username>/busybox:0.1.0
 docker push <your-username>/busybox:latest
 ```
