@@ -2,11 +2,13 @@
 
 This version of the standard busybox container increases the size a bit (1.2MB to 9.2MB) by adding an HTTPie executable.  (busybox: https://busybox.net/about.html).  In the big scheme of things, this is still a small container.
 
-Thank you to the creators of HTTPie: https://httpie.org/
+Thank you to :
+* the creators of HTTPie: https://httpie.org/
+* Yusuke Nojima for creating a Go version of HTTPie: https://github.com/nojima/httpie-go
 
-Thank you to Yusuke Nojima for creating a Go version of HTTPie: https://github.com/nojima/httpie-go
+You can either use mine: `joncrlsn/busybox:latest`  (View tags at //hub.docker.com/joncrlsn/busybox)
 
-Build instructions for docker:
+Or use these build instructions to build your own:
 ```
 docker build -t <your-username>/busybox:0.1.0 .
 
